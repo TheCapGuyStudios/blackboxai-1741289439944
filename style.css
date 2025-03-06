@@ -1,0 +1,40 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+}
+
+#gameArea {
+    background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+    position: relative;
+    overflow: hidden;
+}
+
+#gameCanvas {
+    background: transparent;
+}
+
+#hud {
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+#hud span {
+    color: #ff00cc;
+    text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
+}
+
+@keyframes glow {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+
+#startButton, #restartButton {
+    animation: glow 1.5s infinite;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+#gameOver {
+    color: #ff00cc;
+    text-shadow: 0 0 5px #ff00cc, 0 0 10px #ff00cc;
+}
