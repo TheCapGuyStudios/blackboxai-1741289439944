@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Bike Racing Game</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+    <div class="container mx-auto">
+        <h1 class="text-4xl text-center my-8">Futuristic Bike Racing Game</h1>
+        <div id="gameArea" class="border-2 border-gray-500 h-96 relative overflow-hidden">
+            <canvas id="gameCanvas" class="absolute inset-0 w-full h-full"></canvas>
+            <div id="hud" class="absolute top-0 left-0 right-0 p-4 flex justify-between text-xl font-mono">
+                <div>Score: <span id="score">0</span></div>
+                <div>Speed: <span id="speed">0</span> km/s</div>
+                <div>Time: <span id="timer">0</span>s</div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <button id="startButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-all duration-300">Start Race</button>
+            <div id="gameOver" class="hidden mt-4">
+                <p class="text-2xl mb-4">Game Over!</p>
+                <button id="restartButton" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
